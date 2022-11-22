@@ -1,0 +1,24 @@
+package DynamicProgramming;
+
+import java.util.Scanner;
+
+public class CountingStepsWIthRecursion {
+	
+	public static int countingSteps(int n)
+	{
+		if(n==0||n==1)
+			return 1;
+		else if(n==2)
+			return 2;
+		
+		return countingSteps(n-1)+countingSteps(n-2);//+countingSteps(n-3);
+	}
+	public static void main(String []args)
+	{
+		Scanner sc=new Scanner(System.in);
+		System.out.println("Enter the fucking number");
+		int n=sc.nextInt();
+		System.out.println(countingSteps(n));
+	}
+
+}

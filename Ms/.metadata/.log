@@ -1,0 +1,749 @@
+!SESSION 2022-02-28 21:59:54.859 -----------------------------------------------
+eclipse.buildId=4.13.1.202201311654
+java.version=17.0.1
+java.vendor=Eclipse Adoptium
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=en_GB
+Framework arguments:  -product org.springframework.boot.ide.branding.sts4 -keyring /Users/d.srikanth/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.springframework.boot.ide.branding.sts4 -keyring /Users/d.srikanth/.eclipse_keyring
+
+!ENTRY org.eclipse.jface 2 0 2022-02-28 22:00:24.301
+!MESSAGE Keybinding conflicts occurred.  They may interfere with normal accelerator operation.
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-02-28 22:00:24.301
+!MESSAGE A conflict occurred for COMMAND+SHIFT+T:
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.navigate.open.type,Open Type,
+		Open a type in a Java editor,
+		Category(org.eclipse.ui.category.navigate,Navigate,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@4a3516fd,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+Binding(COMMAND+SHIFT+T,
+	ParameterizedCommand(Command(org.eclipse.lsp4e.symbolinworkspace,Go to Symbol in Workspace,
+		,
+		Category(org.eclipse.lsp4e.category,Language Servers,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@3ba96967,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,,system)
+!SUBENTRY 1 org.eclipse.jface 2 0 2022-02-28 22:00:24.301
+!MESSAGE A conflict occurred for ALT+COMMAND+R:
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.ui.edit.rename,Rename,
+		Rename the selected item,
+		Category(org.eclipse.ui.category.file,File,null,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@5764d421,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+Binding(ALT+COMMAND+R,
+	ParameterizedCommand(Command(org.eclipse.jdt.ui.edit.text.java.rename.element,Rename - Refactoring ,
+		Rename the selected element,
+		Category(org.eclipse.jdt.ui.category.refactoring,Refactor - Java,Java Refactoring Actions,true),
+		org.eclipse.ui.internal.WorkbenchHandlerServiceHandler@1237cade,
+		,,true),null),
+	org.eclipse.ui.defaultAcceleratorConfiguration,
+	org.eclipse.ui.contexts.window,,cocoa,system)
+
+!ENTRY org.eclipse.buildship.core 2 0 2022-02-28 22:00:27.175
+!MESSAGE Could not load Gradle version information
+!STACK 0
+org.gradle.api.UncheckedIOException: Cannot download published Gradle versions.
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:165)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.tryToDownloadAndCacheVersions(PublishedGradleVersions.java:149)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.create(PublishedGradleVersions.java:109)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersionsWrapper$LoadVersionsJob.run(PublishedGradleVersionsWrapper.java:60)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+Caused by: javax.net.ssl.SSLHandshakeException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.ssl.Alert.createSSLException(Alert.java:131)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:370)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:313)
+	at java.base/sun.security.ssl.TransportContext.fatal(TransportContext.java:308)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1357)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.onConsumeCertificate(CertificateMessage.java:1232)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.consume(CertificateMessage.java:1175)
+	at java.base/sun.security.ssl.SSLHandshake.consume(SSLHandshake.java:396)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:480)
+	at java.base/sun.security.ssl.HandshakeContext.dispatch(HandshakeContext.java:458)
+	at java.base/sun.security.ssl.TransportContext.dispatch(TransportContext.java:200)
+	at java.base/sun.security.ssl.SSLTransport.decode(SSLTransport.java:172)
+	at java.base/sun.security.ssl.SSLSocketImpl.decode(SSLSocketImpl.java:1500)
+	at java.base/sun.security.ssl.SSLSocketImpl.readHandshakeRecord(SSLSocketImpl.java:1415)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:450)
+	at java.base/sun.security.ssl.SSLSocketImpl.startHandshake(SSLSocketImpl.java:421)
+	at java.base/sun.net.www.protocol.https.HttpsClient.afterConnect(HttpsClient.java:580)
+	at java.base/sun.net.www.protocol.https.AbstractDelegateHttpsURLConnection.connect(AbstractDelegateHttpsURLConnection.java:183)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream0(HttpURLConnection.java:1665)
+	at java.base/sun.net.www.protocol.http.HttpURLConnection.getInputStream(HttpURLConnection.java:1589)
+	at java.base/sun.net.www.protocol.https.HttpsURLConnectionImpl.getInputStream(HttpsURLConnectionImpl.java:224)
+	at org.eclipse.buildship.core.internal.util.gradle.PublishedGradleVersions.downloadVersionInformation(PublishedGradleVersions.java:162)
+	... 4 more
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:439)
+	at java.base/sun.security.validator.PKIXValidator.engineValidate(PKIXValidator.java:306)
+	at java.base/sun.security.validator.Validator.validate(Validator.java:264)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkTrusted(X509TrustManagerImpl.java:231)
+	at java.base/sun.security.ssl.X509TrustManagerImpl.checkServerTrusted(X509TrustManagerImpl.java:132)
+	at java.base/sun.security.ssl.CertificateMessage$T13CertificateConsumer.checkServerCerts(CertificateMessage.java:1341)
+	... 21 more
+Caused by: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.build(SunCertPathBuilder.java:141)
+	at java.base/sun.security.provider.certpath.SunCertPathBuilder.engineBuild(SunCertPathBuilder.java:126)
+	at java.base/java.security.cert.CertPathBuilder.build(CertPathBuilder.java:297)
+	at java.base/sun.security.validator.PKIXValidator.doBuild(PKIXValidator.java:434)
+	... 26 more
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:18.553
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:18.554
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@8c903b0[org.springframework.tooling.boot.ls:1.30.0.202201310805(id=557)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:18.555
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:18.575
+!MESSAGE Instantiating ReusableClasspathListenerHandler
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.504
+!MESSAGE Boot LS startup time from start to initialized: 1941ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.584
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CyXjCKRMisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.586
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.588
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.588
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.588
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.589
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.CyXjCKRM => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.590
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.591
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM Interviews false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.591
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.591
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.592
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM CarsProblemCodility false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.592
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.592
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.593
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM Interview2nd false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.593
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.598
+!MESSAGE classpath=18 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.599
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JDBCApps false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.599
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.599
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.600
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JavaPrograms false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.600
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.600
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.601
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JavaProgramsForpractice false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.601
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.601
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.601
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM LeetCode false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.602
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.602
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.603
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM MachineCodingWorkAtTech false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.603
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.603
+!MESSAGE classpath=19 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.604
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM MustDoCodingQuestions false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.604
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.604
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.604
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM RandomPractice false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.605
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.605
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.605
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM SystemDesign false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.605
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 11 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:20.886
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.eclipse.ui 2 2 2022-02-28 22:01:25.887
+!MESSAGE Invalid property category path: org.springframework.ide.eclipse.beans.ui.properties.ProjectPropertyPage (bundle: org.springframework.ide.eclipse.xml.namespaces, propertyPage: org.springframework.ide.eclipse.beans.ui.namespaces.projectPropertyPage)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:29.861
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:29.861
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM Interviews true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:29.861
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:29.865
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-02-28 22:01:29.865
+!MESSAGE Exception occurred while fetching the content type from the buffer
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Interviews/src/Servicenow/ServiceNow.java)[368]: java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:348)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-02-28 22:01:29.866
+!MESSAGE Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:348)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-02-28 22:01:29.866
+!MESSAGE Exception occurred while fetching the content type from the buffer
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Interviews/src/Servicenow/ServiceNow.java)[368]: java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServersRegistry.matches(LanguageServersRegistry.java:394)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$5(LanguageServiceAccessor.java:355)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-02-28 22:01:29.866
+!MESSAGE Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServersRegistry.matches(LanguageServersRegistry.java:394)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$5(LanguageServiceAccessor.java:355)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:41)
+	at org.eclipse.lsp4e.operations.codelens.CodeLensProvider.provideCodeMinings(CodeLensProvider.java:73)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-02-28 22:01:29.867
+!MESSAGE Exception occurred while fetching the content type from the buffer
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Interviews/src/Servicenow/ServiceNow.java)[368]: java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:348)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:60)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:88)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-02-28 22:01:29.867
+!MESSAGE Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:348)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:60)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:88)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-02-28 22:01:29.867
+!MESSAGE Exception occurred while fetching the content type from the buffer
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Interviews/src/Servicenow/ServiceNow.java)[368]: java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:78)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$15(LanguageServerWrapper.java:599)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-02-28 22:01:29.868
+!MESSAGE Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.DocumentContentSynchronizer.<init>(DocumentContentSynchronizer.java:78)
+	at org.eclipse.lsp4e.LanguageServerWrapper.lambda$15(LanguageServerWrapper.java:599)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(CompletableFuture.java:1150)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.exec(CompletableFuture.java:483)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(ForkJoinTask.java:373)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(ForkJoinPool.java:1182)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(ForkJoinPool.java:1655)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(ForkJoinPool.java:1622)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(ForkJoinWorkerThread.java:165)
+
+!ENTRY org.eclipse.lsp4e 4 0 2022-02-28 22:01:29.868
+!MESSAGE Exception occurred while fetching the content type from the buffer
+!STACK 1
+org.eclipse.core.internal.resources.ResourceException(/Interviews/src/Servicenow/ServiceNow.java)[368]: java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServersRegistry.matches(LanguageServersRegistry.java:394)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$5(LanguageServiceAccessor.java:355)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:60)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:88)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+!SUBENTRY 1 org.eclipse.core.resources 4 368 2022-02-28 22:01:29.868
+!MESSAGE Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+!STACK 0
+java.lang.Exception: Resource '/Interviews/src/Servicenow/ServiceNow.java' does not exist.
+	at org.eclipse.core.internal.resources.ResourceException.provideStackTrace(ResourceException.java:42)
+	at org.eclipse.core.internal.resources.ResourceException.<init>(ResourceException.java:38)
+	at org.eclipse.core.internal.resources.Resource.checkExists(Resource.java:330)
+	at org.eclipse.core.internal.resources.Resource.checkAccessible(Resource.java:204)
+	at org.eclipse.core.internal.resources.File.getContentDescription(File.java:253)
+	at org.eclipse.core.internal.filebuffers.ResourceTextFileBuffer.getContentType(ResourceTextFileBuffer.java:201)
+	at org.eclipse.lsp4e.LSPEclipseUtils.getDocumentContentTypes(LSPEclipseUtils.java:863)
+	at org.eclipse.lsp4e.LanguageServersRegistry.matches(LanguageServersRegistry.java:394)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.lambda$5(LanguageServiceAccessor.java:355)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:178)
+	at java.base/java.util.HashMap$KeySpliterator.forEachRemaining(HashMap.java:1707)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLSWrappers(LanguageServiceAccessor.java:362)
+	at org.eclipse.lsp4e.LanguageServiceAccessor.getLanguageServers(LanguageServiceAccessor.java:588)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:60)
+	at org.eclipse.lsp4e.operations.color.DocumentColorProvider.provideCodeMinings(DocumentColorProvider.java:88)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.lambda$2(CodeMiningManager.java:189)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:992)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.getCodeMinings(CodeMiningManager.java:195)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.updateCodeMinings(CodeMiningManager.java:140)
+	at org.eclipse.jface.internal.text.codemining.CodeMiningManager.run(CodeMiningManager.java:129)
+	at org.eclipse.jface.text.source.SourceViewer.updateCodeMinings(SourceViewer.java:1313)
+	at org.springframework.tooling.ls.eclipse.commons.STS4LanguageClientImpl.lambda$9(STS4LanguageClientImpl.java:430)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.lambda$0(ReusableClasspathListenerHandler.java:77)
+	at java.base/java.lang.Iterable.forEach(Iterable.java:75)
+	at org.springframework.tooling.jdt.ls.commons.classpath.ReusableClasspathListenerHandler$CallbackJob.run(ReusableClasspathListenerHandler.java:77)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:35.118
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:35.118
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JDBCApps true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:35.119
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:01:35.120
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:03.152
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:03.153
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM CarsProblemCodility true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:03.153
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:03.155
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:14.632
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:14.632
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM Interview2nd true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:14.633
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:14.635
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:40.923
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:40.923
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JavaProgramsForpractice true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:40.923
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:02:40.925
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:40.831
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:40.831
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM MustDoCodingQuestions true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:40.832
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:40.834
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:55.954
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:55.954
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM RandomPractice true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:55.955
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:03:55.957
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.353
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.353
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM MachineCodingWorkAtTech true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.354
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.354
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM SystemDesign true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.354
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:11.356
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.287
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.287
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM JavaPrograms true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.287
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.288
+!MESSAGE classpath=17 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.288
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM oldPractisePrograms false 17
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.288
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 2 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:05:52.292
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:32.989
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:32.990
+!MESSAGE classpath=1 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:32.990
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM src false 1
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:32.990
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.019
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.514
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.515
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.515
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM src false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.515
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.589
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.590
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.590
+!MESSAGE classpath=2 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.590
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM src false 2
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.590
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:33.592
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:47.424
+!MESSAGE exists = false open = true => deleted = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:47.424
+!MESSAGE buffering callback sts4.classpath.CyXjCKRM LeetCode true 0
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:47.424
+!MESSAGE executing callback sts4.classpath.CyXjCKRM 1 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-28 22:06:47.426
+!MESSAGE executing callback sts4.classpath.CyXjCKRM SUCCESS [done]

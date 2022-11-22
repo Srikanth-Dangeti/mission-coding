@@ -1,0 +1,54 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BoundaryTraversal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GrabTrees.BoundaryTraversal",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DiagonalTraversal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GrabTrees.DiagonalTraversal",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testing",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GrabTrees.Testing",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - levelOrderQueue",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GrabTrees.levelOrderQueue",
+            "args": ""
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TreeTraversal",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "console": "internalConsole",
+            "stopOnEntry": false,
+            "mainClass": "GrabTrees.TreeTraversal",
+            "args": ""
+        }
+    ]
+}

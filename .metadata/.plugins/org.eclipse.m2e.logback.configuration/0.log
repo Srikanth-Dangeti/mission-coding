@@ -1,0 +1,68 @@
+2022-02-28 22:09:53,642 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2022-02-28 22:29:46,206 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2022-02-28 22:34:13,756 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is not available. Remote download required.
+2022-04-06 21:06:20,221 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-06 21:06:20,825 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2022-04-18 13:05:12,602 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-04-18 13:05:13,214 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Updating Gradle version information cache failed. Using outdated cache.
+2022-05-01 23:08:44,977 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-05-02 13:14:32,395 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-09 16:50:16,707 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-05-12 19:01:06,354 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-05-12 22:48:55,853 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-12 22:59:55,602 [Worker-3: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-21 19:41:19,353 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-24 00:12:36,268 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-05-24 16:43:18,956 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2022-05-24 16:43:20,785 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.github.gcflames5:splitwise:1.1 @ /Users/d.srikanth/Downloads/splitwise-java-master/pom.xml.
+2022-05-24 16:43:20,858 [Worker-11: Update Maven projects configuration] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.jetbrains.kotlin:kotlin-compiler:jar:13.0 is missing, no dependency information available
+2022-05-24 16:43:24,855 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+2022-05-24 16:43:25,004 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/plugins/maven-jar-plugin/2.4/maven-jar-plugin-2.4.pom
+2022-05-24 16:43:25,747 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+2022-05-24 16:43:26,182 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.pom
+2022-05-24 16:43:27,132 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+2022-05-24 16:43:30,702 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.pom
+2022-05-24 16:43:30,962 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+2022-05-24 16:43:31,389 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.pom
+2022-05-24 16:43:33,226 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+2022-05-24 16:43:34,428 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2022-05-24 16:43:34,927 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/apache/maven/maven-archiver/2.5/maven-archiver-2.5.jar
+2022-05-24 16:43:40,550 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+2022-05-24 16:43:45,257 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-io/2.0.2/plexus-io-2.0.2.jar
+2022-05-24 16:43:45,735 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+2022-05-24 16:43:58,637 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/commons-lang/commons-lang/2.1/commons-lang-2.1.jar
+2022-05-24 16:44:02,530 [AetherRepositoryConnector-udmvnrepo.blob.core.windows.net-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/org/codehaus/plexus/plexus-archiver/2.1/plexus-archiver-2.1.jar
+2022-05-24 16:44:02,756 [Worker-11: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /splitwise-java-master/src/main/java
+2022-05-24 16:44:02,758 [Worker-11: Update Maven projects configuration] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /splitwise-java-master/src/test/java
+2022-05-24 16:44:02,893 [Worker-11: Update Maven projects configuration] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update completed: 43 sec
+2022-05-24 16:44:03,699 [Worker-13: Download sources and javadoc] WARN  o.e.m.c.i.embedder.EclipseLogger - The POM for org.jetbrains.kotlin:kotlin-compiler:jar:13.0 is missing, no dependency information available
+2022-05-24 16:44:04,777 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-05-24 16:44:04,778 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/d.srikanth/Downloads/splitwise-java-master/src/main/resources
+2022-05-24 16:44:04,780 [Worker-6: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-05-24 16:44:04,780 [Worker-6: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory /Users/d.srikanth/Downloads/splitwise-java-master/src/test/resources
+2022-05-24 16:44:05,250 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/com/github/scribejava/scribejava-apis/6.6.3/scribejava-apis-6.6.3-sources.jar
+2022-05-24 16:44:09,505 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.infra.udaan.io/maven/central/com/github/scribejava/scribejava-apis/6.6.3/scribejava-apis-6.6.3-sources.jar
+2022-05-24 16:44:09,506 [Worker-13: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.github.scribejava:scribejava-apis:6.6.3
+2022-05-24 16:44:14,835 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://udmvnrepo.blob.core.windows.net/repo/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9-sources.jar
+2022-05-24 16:44:38,304 [Worker-13: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.infra.udaan.io/maven/central/com/fasterxml/jackson/core/jackson-databind/2.9.9/jackson-databind-2.9.9-sources.jar
+2022-05-24 16:44:38,309 [Worker-13: Download sources and javadoc] ERROR o.e.m.j.internal.DownloadSourcesJob - Could not download sources for com.fasterxml.jackson.core:jackson-databind:2.9.9
+org.eclipse.core.runtime.CoreException: Could not resolve artifact com.fasterxml.jackson.core:jackson-databind:jar:sources:2.9.9
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.lambda$4(MavenImpl.java:828)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:117)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:796)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.resolve(MavenImpl.java:773)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.download(DownloadSourcesJob.java:311)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadAttachments(DownloadSourcesJob.java:285)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadMaven(DownloadSourcesJob.java:255)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.downloadFilesAndPopulateToUpdate(DownloadSourcesJob.java:223)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.lambda$0(DownloadSourcesJob.java:152)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:182)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:156)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:103)
+	at org.eclipse.m2e.core.internal.embedder.MavenImpl.execute(MavenImpl.java:1416)
+	at org.eclipse.m2e.jdt.internal.DownloadSourcesJob.run(DownloadSourcesJob.java:152)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2022-05-27 01:03:36,588 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2022-07-18 01:14:03,387 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
