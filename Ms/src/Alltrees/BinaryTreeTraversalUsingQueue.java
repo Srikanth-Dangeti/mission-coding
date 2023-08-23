@@ -15,9 +15,11 @@ public class BinaryTreeTraversalUsingQueue {
 	{
 		Queue<Node> q =new LinkedList<Node>();
 		q.add(root);
+		q.add(null);
 		while(!q.isEmpty())
 		{
 			Node temp=q.poll();
+			if(temp !=null)
 			System.out.print(temp.data+" ");
 			
 			if(temp.left!=null)
@@ -25,6 +27,7 @@ public class BinaryTreeTraversalUsingQueue {
 			if(temp.right!=null)
 				q.add(temp.right);
 		}
+		q.add(null);
 	}
 	
 	public static void main(String []args)

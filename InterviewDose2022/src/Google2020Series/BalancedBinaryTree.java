@@ -1,6 +1,5 @@
 package Google2020Series;
 
-import javafx.util.Pair;
 
 public class BalancedBinaryTree {
     class TreeNode{
@@ -14,7 +13,7 @@ public class BalancedBinaryTree {
            this.right = right;
        }
     }
-    public boolean isBalanced(TreeNode node)
+    /*public boolean isBalanced(TreeNode node)
     {
         return  dfs(node).getKey();
     }
@@ -34,7 +33,7 @@ public class BalancedBinaryTree {
 
         return new Pair<Boolean, Integer>(balanced, 1 + Math.max(left.getValue(), right.getValue()));
 
-    }
+    }*/
 
 
     public static void main(String [] args)

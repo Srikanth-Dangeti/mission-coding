@@ -1,6 +1,5 @@
 package Google2020Series;
 
-import com.sun.deploy.security.SelectableSecurityManager;
 
 /**
  * This problem is similar to 0/1 knapsack Problem
