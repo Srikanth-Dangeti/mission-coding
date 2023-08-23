@@ -1,6 +1,5 @@
 package segmentTrees;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.*;
 
 public class RangeSumQuery {
