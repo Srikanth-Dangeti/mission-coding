@@ -1,6 +1,5 @@
 package segmentTrees;
 
-import javax.xml.bind.SchemaOutputResolver;
 import java.util.*;
 
 public class RangeSumQuery {
@@ -75,7 +74,5 @@ public class RangeSumQuery {
         System.out.println("RangeSum(2,4) : "+ rangeQuery(2,4, st, nodeIndex, start, end));
         System.out.println("RangeSum(1,4) : "+ rangeQuery(1,4, st, nodeIndex, start, end));
         System.out.println("RangeSum(3,3) : "+ rangeQuery(3,3, st, nodeIndex, start, end));
-
-
     }
 }

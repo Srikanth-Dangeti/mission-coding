@@ -2,11 +2,13 @@ package Arrays;
 
 import java.util.Arrays;
 
-
+/**
+ * This Class will sort different colors.
+ */
 public class SortColors {
 
     /**
-     * 
+     *  This method will swap the input values.
      * @param nums
      */
     public static void swapNumbers(int nums[], int low , int mid)
