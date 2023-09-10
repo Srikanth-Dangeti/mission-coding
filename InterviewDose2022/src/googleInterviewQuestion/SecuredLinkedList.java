@@ -133,8 +133,9 @@ import java.util.Objects;
 
 class Node {
     String value;
-    int hashValue;
     Node next;
+    int hashValue;
+
 
     public Node(String value, Node next) {
         this.value = value;
@@ -158,6 +159,10 @@ class SecuredLinkedList {
         this.head = null;
     }
 
+    /**
+     * addValue Method will add values at the head of the linkedlist.
+     * @param value
+     */
     public void addValue(String value) {
         head = new Node(value, head);
     }
@@ -219,15 +224,20 @@ class SecuredLinkedList {
 
     public static void main(String[] args) {
         SecuredLinkedList myList = new SecuredLinkedList();
-
+        //System.out.println(myList.head.value);
         myList.addValue("C");
         myList.addValue("B");
         myList.addValue("A");
 
-        // Creating a cycle for testing (C points back to B)
-        myList.head.next.next.next = myList.head.next;
+        /*System.out.println(myList.head.value);
+        System.out.println(myList.head.next.value);
+        System.out.println(myList.head.next.next.value);*/
 
-        System.out.println("Original Chain with Cycle:");
+
+        // Creating a cycle for testing (C points back to B)
+       // myList.head.next.next.next = myList.head.next;
+
+        //System.out.println("Original Chain with Cycle:");
         System.out.println("Is Valid? " + myList.isValidChain());
 
         myList.hack("X", 1, myList);
