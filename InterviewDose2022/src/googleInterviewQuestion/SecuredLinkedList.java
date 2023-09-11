@@ -11,8 +11,7 @@ package googleInterviewQuestion;
  * for this question. If the Node do not have a next Node, its hashValue should be the hash of the Node's own value
  * Now we want you to define and implement a Secured Linked List class which h&s the following two interfaces,
  * 1. void addvalue (String value) which adds a new node with the value at the head" of the Linked List. Note:
- * This is different from a normal.
- * Linked List which always adds new node to the tail.
+ * This is different from a normal. Linked List which always adds new node to the tail.
  * 2. boolean isValidChain() which returns true if the whole chain is valid, false if not. "Valid* means for every node,
  * the hashValue is in compliance with the hash function, i.e. hashValue is the same as the hash of "its own value
  * concatenated with the hashValue of the next node"
@@ -130,6 +129,7 @@ package googleInterviewQuestion;
  */
 
 import java.util.Objects;
+import java.util.Stack;
 
 class Node {
     String value;
@@ -153,7 +153,7 @@ class Node {
 }
 
 class SecuredLinkedList {
-    public Node head;
+    private Node head;
 
     public SecuredLinkedList() {
         this.head = null;
@@ -164,7 +164,18 @@ class SecuredLinkedList {
      * @param value
      */
     public void addValue(String value) {
+        if(value == null)
+            return;// or explict throw the exception
         head = new Node(value, head);
+    }
+
+    public void print() {
+        Node node = this.head;
+        while(node != null) {
+            System.out.print(node.value +" -->");
+            System.out.println(node.hashValue);
+            node = node.next;
+        }
     }
 
     public boolean isValidChain() {
@@ -196,17 +207,19 @@ class SecuredLinkedList {
 
     public void hack(String value, int pos, SecuredLinkedList chain) {
         Node newNode = new Node(value, null);
-
+        Stack<Node> predecessors = new Stack<Node>();
         if (pos == 0) {
             // Insert at the beginning (head position)
             newNode.next = chain.head;
             newNode.hashValue = newNode.calculateHash();
             chain.head = newNode;
-        } else {
+        } else if(chain.head !=null){
             // Find the predecessor node at position pos-1
             Node predecessor = chain.head;
+            predecessors.add(predecessor);
             for (int i = 0; i < pos - 1; i++) {
                 predecessor = predecessor.next;
+                predecessors.add(predecessor);
                 if (predecessor == null) {
                     throw new IllegalArgumentException("Invalid position");
                 }
@@ -218,17 +231,42 @@ class SecuredLinkedList {
             predecessor.next = newNode;
 
             // Update the hashValue of the predecessor node
-            predecessor.hashValue = (predecessor.value + newNode.hashValue).hashCode();
+            while (!predecessors.isEmpty()) {
+                predecessor = predecessors.pop();
+                predecessor.hashValue = (predecessor.value + predecessor.next.hashValue).hashCode();
+            }
         }
     }
+
+
+    /**
+     * Follow up Q.2 plain linkedList to SecuredLinkedList
+     * @param plainHead
+     * @return
+     */
+    public static SecuredLinkedList fromPlainLinkedList(Node plainHead) {
+        Stack<String> stack = new Stack<String>();
+        SecuredLinkedList securedList = new SecuredLinkedList();
+        Node current = plainHead;
+        while (current != null) {
+            stack.add(current.value);
+        }
+        while (!stack.isEmpty()) {
+            String value = stack.pop();
+            securedList.addValue(value);
+        }
+        return securedList;
+    }
+
 
     public static void main(String[] args) {
         SecuredLinkedList myList = new SecuredLinkedList();
         //System.out.println(myList.head.value);
-        myList.addValue("C");
-        myList.addValue("B");
-        myList.addValue("A");
+        myList.addValue("1");
+        myList.addValue("1");
+        myList.addValue("1");
 
+        myList.print();
         /*System.out.println(myList.head.value);
         System.out.println(myList.head.next.value);
         System.out.println(myList.head.next.next.value);*/
@@ -239,11 +277,13 @@ class SecuredLinkedList {
 
         //System.out.println("Original Chain with Cycle:");
         System.out.println("Is Valid? " + myList.isValidChain());
-
+        //myList.print();
         myList.hack("X", 1, myList);
+        myList.print();
 
-        System.out.println("Hacked Chain with Cycle:");
+        //System.out.println("Hacked Chain with Cycle:");
         System.out.println("Is Valid? " + myList.isValidChain());
+        //myList.print();
     }
 }
 
